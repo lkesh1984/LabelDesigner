@@ -1,0 +1,189 @@
+/*.svg-container {
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+  .svg-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+.card-body {
+  position: relative;
+}
+
+.svg-container {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon container */
+.icon-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  flex: 0 0 40px; /* fixed width for icons column */
+  align-items: center;
+}
+
+  /* Make icons bigger and cursor pointer */
+  .icon-actions svg {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+
+    .icon-actions svg:hover {
+      color: #007bff; /* Bootstrap primary blue on hover */
+    }
+.dropdown-menu {
+  background-color: white;
+  border: 1px solid #ccc;
+  min-width: 150px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+  .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+
+  .modal-backdrop-blur {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0,0,0,0.5); /* semi-dark */
+      backdrop-filter: blur(5px);        /* blur effect */
+      z-index: 1040;                      /* below modal (1050 by default) */
+    }
+
+  /* Add New button styling */
+.add-new-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;             /* space between icon and text */
+  padding: 0.5rem 1rem;    /* button padding */
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #0d6efd, #6610f2); /* gradient button */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.add-new-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  background: linear-gradient(135deg, #0b5ed7, #520dc2);
+}
+
+/* Active / pressed effect */
+.add-new-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #0a58ca, #4a0cb0);
+}
+
+/* Icon inside button */
+.add-new-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+/* Modal backdrop blur */
+.modal-backdrop-blur {
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+/* Grid layout: multiple widgets per row */
+.widget-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.widget-box {
+  border: 1px dashed #6c757d;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+  padding: 6px 8px; /* smaller padding */
+  transition: box-shadow 0.2s ease;
+}
+
+.widget-box:hover {
+  box-shadow: 0 0 6px rgba(0,0,0,0.15);
+}
+
+.barcode-widget {
+  border-color: #0d6efd;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #e9ecef,
+    #e9ecef 1px,
+    #f8f9fa 1px,
+    #f8f9fa 2px
+  );
+}
+
+/* Smaller labels and inputs */
+.widget-box .form-label {
+  margin-bottom: 2px;
+  font-size: 0.8rem;
+}
+
+.widget-box .form-control {
+  font-size: 0.8rem;
+  padding: 2px 6px;
+}
+
+/* Barcode SVG smaller */
+.widget-box svg {
+  height: 25px; /* smaller */
+  width: 100%;
+}
+
+/* Submit button spacing */
+button[type="submit"] {
+  min-width: 100px;
+  margin-top: 10px;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050; /* above modal */
+}

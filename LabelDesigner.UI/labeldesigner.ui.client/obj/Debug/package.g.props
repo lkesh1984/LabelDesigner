@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <PackageJsonName Condition="$(PackageJsonName) == ''">labeldesigner.ui.client</PackageJsonName>
+    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">0.0.0</PackageJsonVersion>
+    <PackageJsonPrivate Condition="$(PackageJsonPrivate) == ''">true</PackageJsonPrivate>
+    <PackageJsonScriptsNg Condition="$(PackageJsonScriptsNg) == ''">ng</PackageJsonScriptsNg>
+    <PackageJsonScriptsStart Condition="$(PackageJsonScriptsStart) == ''">ng serve</PackageJsonScriptsStart>
+    <PackageJsonScriptsBuild Condition="$(PackageJsonScriptsBuild) == ''">ng build</PackageJsonScriptsBuild>
+    <PackageJsonScriptsTest Condition="$(PackageJsonScriptsTest) == ''">ng test</PackageJsonScriptsTest>
+    <PackageJsonDependenciesAngularAnimations Condition="$(PackageJsonDependenciesAngularAnimations) == ''">~19.0.7</PackageJsonDependenciesAngularAnimations>
+    <PackageJsonDependenciesAngularCdk Condition="$(PackageJsonDependenciesAngularCdk) == ''">~19.0.0</PackageJsonDependenciesAngularCdk>
+    <PackageJsonDependenciesAngularCommon Condition="$(PackageJsonDependenciesAngularCommon) == ''">~19.0.7</PackageJsonDependenciesAngularCommon>
+    <PackageJsonDependenciesAngularCompiler Condition="$(PackageJsonDependenciesAngularCompiler) == ''">~19.0.7</PackageJsonDependenciesAngularCompiler>
+    <PackageJsonDependenciesAngularCore Condition="$(PackageJsonDependenciesAngularCore) == ''">~19.0.7</PackageJsonDependenciesAngularCore>
+    <PackageJsonDependenciesAngularForms Condition="$(PackageJsonDependenciesAngularForms) == ''">~19.0.7</PackageJsonDependenciesAngularForms>
+    <PackageJsonDependenciesAngularPlatformBrowser Condition="$(PackageJsonDependenciesAngularPlatformBrowser) == ''">~19.0.7</PackageJsonDependenciesAngularPlatformBrowser>
+    <PackageJsonDependenciesAngularPlatformBrowserDynamic Condition="$(PackageJsonDependenciesAngularPlatformBrowserDynamic) == ''">~19.0.7</PackageJsonDependenciesAngularPlatformBrowserDynamic>
+    <PackageJsonDependenciesAngularRouter Condition="$(PackageJsonDependenciesAngularRouter) == ''">~19.0.7</PackageJsonDependenciesAngularRouter>
+    <PackageJsonDependenciesFortawesomeFontawesomeFree Condition="$(PackageJsonDependenciesFortawesomeFontawesomeFree) == ''">^7.0.1</PackageJsonDependenciesFortawesomeFontawesomeFree>
+    <PackageJsonDependenciesBootstrap Condition="$(PackageJsonDependenciesBootstrap) == ''">^5.3.8</PackageJsonDependenciesBootstrap>
+    <PackageJsonDependenciesDomToImage Condition="$(PackageJsonDependenciesDomToImage) == ''">^2.6.0</PackageJsonDependenciesDomToImage>
+    <PackageJsonDependenciesFabric Condition="$(PackageJsonDependenciesFabric) == ''">^5.3.0</PackageJsonDependenciesFabric>
+    <PackageJsonDependenciesInstall Condition="$(PackageJsonDependenciesInstall) == ''">^0.13.0</PackageJsonDependenciesInstall>
+    <PackageJsonDependenciesInteractjs Condition="$(PackageJsonDependenciesInteractjs) == ''">^1.10.27</PackageJsonDependenciesInteractjs>
+    <PackageJsonDependenciesJsbarcode Condition="$(PackageJsonDependenciesJsbarcode) == ''">^3.12.1</PackageJsonDependenciesJsbarcode>
+    <PackageJsonDependenciesJspdf Condition="$(PackageJsonDependenciesJspdf) == ''">^3.0.3</PackageJsonDependenciesJspdf>
+    <PackageJsonDependenciesNpm Condition="$(PackageJsonDependenciesNpm) == ''">^11.6.0</PackageJsonDependenciesNpm>
+    <PackageJsonDependenciesRunScriptOs Condition="$(PackageJsonDependenciesRunScriptOs) == ''">*</PackageJsonDependenciesRunScriptOs>
+    <PackageJsonDependenciesRxjs Condition="$(PackageJsonDependenciesRxjs) == ''">~7.8.0</PackageJsonDependenciesRxjs>
+    <PackageJsonDependenciesTslib Condition="$(PackageJsonDependenciesTslib) == ''">^2.3.0</PackageJsonDependenciesTslib>
+    <PackageJsonDependenciesZoneJs Condition="$(PackageJsonDependenciesZoneJs) == ''">~0.15.0</PackageJsonDependenciesZoneJs>
+    <PackageJsonDevdependenciesAngularDevkitBuildAngular Condition="$(PackageJsonDevdependenciesAngularDevkitBuildAngular) == ''">^19.0.7</PackageJsonDevdependenciesAngularDevkitBuildAngular>
+    <PackageJsonDevdependenciesAngularCli Condition="$(PackageJsonDevdependenciesAngularCli) == ''">~19.0.7</PackageJsonDevdependenciesAngularCli>
+    <PackageJsonDevdependenciesAngularCompilerCli Condition="$(PackageJsonDevdependenciesAngularCompilerCli) == ''">~19.0.7</PackageJsonDevdependenciesAngularCompilerCli>
+    <PackageJsonDevdependenciesTypesFabric Condition="$(PackageJsonDevdependenciesTypesFabric) == ''">^5.3.10</PackageJsonDevdependenciesTypesFabric>
+    <PackageJsonDevdependenciesTypescript Condition="$(PackageJsonDevdependenciesTypescript) == ''">~5.6.0</PackageJsonDevdependenciesTypescript>
+  </PropertyGroup>
+</Project>

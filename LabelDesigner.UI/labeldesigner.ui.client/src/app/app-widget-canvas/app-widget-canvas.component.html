@@ -1,0 +1,51 @@
+<div class="canvas-container position-relative w-100 h-100">
+
+  <!-- Empty state -->
+  <div *ngIf="widgets.length === 0"
+       class="canvas-empty d-flex flex-column align-items-center justify-content-center">
+    <svg viewBox="0 0 500 250" width="60" height="60" class="mb-3" preserveAspectRatio="none">
+      <rect x="10" y="20" width="80" height="60"
+            fill="none" stroke="#adb5bd" stroke-width="4"
+            stroke-dasharray="6 4" />
+    </svg>
+    <p class="text-muted mb-1">No shapes yet</p>
+    <small class="text-secondary">Select a shape above and design</small>
+  </div>
+
+  <!-- Drawing area -->
+  <svg class="drawing-area w-100 h-100"
+       viewBox="0 0 100 100"
+       preserveAspectRatio="none"
+       xmlns="http://www.w3.org/2000/svg">
+
+    <g *ngFor="let w of widgets" (click)="select(w)" style="cursor: pointer;">
+      <ng-container [ngSwitch]="w.type">
+
+        <!-- Rectangle -->
+        <rect *ngSwitchCase="WidgetType.Rectangle"
+              [attr.x]="w.x" [attr.y]="w.y"
+              [attr.width]="w.width" [attr.height]="w.height"
+              [attr.fill]="w.fillColor" [attr.stroke]="w.strokeColor"
+              [attr.stroke-width]="w.strokeWidth || 1" />
+
+        <!-- Circle -->
+        <circle *ngSwitchCase="WidgetType.Circle"
+                [attr.cx]="w.x + w.width/2"
+                [attr.cy]="w.y + w.height/2"
+                [attr.r]="Math.min(w.width,w.height)/2"
+                [attr.fill]="w.fillColor" [attr.stroke]="w.strokeColor"
+                [attr.stroke-width]="w.strokeWidth || 1" />
+
+        <!-- Barcode (render as dashed rectangle) -->
+        <rect *ngSwitchCase="WidgetType.Barcode"
+              [attr.x]="w.x" [attr.y]="w.y"
+              [attr.width]="w.width" [attr.height]="w.height"
+              [attr.fill]="w.color || 'none'"
+              [attr.stroke]="w.strokeColor || 'black'"
+              stroke-dasharray="2,2" />
+
+      </ng-container>
+    </g>
+  </svg>
+
+</div>

@@ -1,0 +1,17 @@
+﻿<svg viewBox="0 0 100 100"
+     width="@Width" height="@Height"
+     xmlns="http://www.w3.org/2000/svg"
+     preserveAspectRatio="xMidYMid meet">
+    <rect x="20" y="30" width="60" height="40"
+          fill="@FillColor"
+          stroke="@StrokeColor"
+          stroke-width="@StrokeWidth" />
+</svg>
+
+@code {
+    [Parameter] public string FillColor { get; set; } = "none";
+    [Parameter] public string StrokeColor { get; set; } = "currentColor";
+    [Parameter] public double StrokeWidth { get; set; } = 4;
+    [Parameter] public string Width { get; set; } = "100%";
+    [Parameter] public string Height { get; set; } = "100%";
+}

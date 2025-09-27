@@ -1,0 +1,163 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "LabelDesigner.PublicApi",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Pdf": {
+      "post": {
+        "tags": [
+          "Pdf"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerateBulkPdfRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerateBulkPdfRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerateBulkPdfRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "GenerateBulkPdfRequest": {
+        "required": [
+          "records",
+          "templateId"
+        ],
+        "type": "object",
+        "properties": {
+          "templateId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "height": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "width": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "records": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GeneratePdfRequest"
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "GeneratePdfRequest": {
+        "required": [
+          "templateWidgets"
+        ],
+        "type": "object",
+        "properties": {
+          "templateWidgets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TemplateWidget"
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "TemplateWidget": {
+        "type": "object",
+        "properties": {
+          "widgetId": {
+            "type": "string",
+            "nullable": true
+          },
+          "widgetValue": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

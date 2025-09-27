@@ -1,0 +1,6 @@
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Database\bin\Debug\LabelDesigner.Database.dacpac
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Database\bin\Debug\LabelDesigner.Database.dll
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Database\bin\Debug\LabelDesigner.Database.pdb
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Database\obj\Debug\LabelDesigner.Database.sqlproj.AssemblyReference.cache
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Database\obj\Debug\LabelDesigner.Database.dll
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Database\obj\Debug\LabelDesigner.Database.pdb

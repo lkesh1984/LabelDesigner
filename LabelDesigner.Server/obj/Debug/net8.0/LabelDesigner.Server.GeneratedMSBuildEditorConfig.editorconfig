@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LabelDesigner.Server
+build_property.RootNamespace = LabelDesigner.Server
+build_property.ProjectDir = C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Server\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Server
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Git/Hackathon/LabelDesigner/LabelDesigner/LabelDesigner.Server/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/Hackathon/LabelDesigner/LabelDesigner/LabelDesigner.Server/Components/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/Hackathon/LabelDesigner/LabelDesigner/LabelDesigner.Server/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/Hackathon/LabelDesigner/LabelDesigner/LabelDesigner.Server/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/Hackathon/LabelDesigner/LabelDesigner/LabelDesigner.Server/Components/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/Hackathon/LabelDesigner/LabelDesigner/LabelDesigner.Server/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/Hackathon/LabelDesigner/LabelDesigner/LabelDesigner.Server/Components/Svg/BarcodeSvg.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTdmdcQmFyY29kZVN2Zy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/Hackathon/LabelDesigner/LabelDesigner/LabelDesigner.Server/Components/Svg/CircleSvg.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTdmdcQ2lyY2xlU3ZnLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/Hackathon/LabelDesigner/LabelDesigner/LabelDesigner.Server/Components/Svg/LineSvg.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTdmdcTGluZVN2Zy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/Hackathon/LabelDesigner/LabelDesigner/LabelDesigner.Server/Components/Svg/RectangleSvg.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTdmdcUmVjdGFuZ2xlU3ZnLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/Hackathon/LabelDesigner/LabelDesigner/LabelDesigner.Server/Components/Svg/TextSvg.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTdmdcVGV4dFN2Zy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/Hackathon/LabelDesigner/LabelDesigner/LabelDesigner.Server/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/Hackathon/LabelDesigner/LabelDesigner/LabelDesigner.Server/Components/DesignerHeader.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEZXNpZ25lckhlYWRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-oks7ykw42u
+
+[C:/Git/Hackathon/LabelDesigner/LabelDesigner/LabelDesigner.Server/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-hxf15xyqgo
+
+[C:/Git/Hackathon/LabelDesigner/LabelDesigner/LabelDesigner.Server/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-8i3qkpjlay
+
+[C:/Git/Hackathon/LabelDesigner/LabelDesigner/LabelDesigner.Server/Components/PropertiesPanel.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQcm9wZXJ0aWVzUGFuZWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-0ccmr9ea5i
+
+[C:/Git/Hackathon/LabelDesigner/LabelDesigner/LabelDesigner.Server/Components/TemplateDesigner.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUZW1wbGF0ZURlc2lnbmVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-4he5od6t7x
+
+[C:/Git/Hackathon/LabelDesigner/LabelDesigner/LabelDesigner.Server/Components/WidgetCanvas.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xXaWRnZXRDYW52YXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-mhvtq90u0i

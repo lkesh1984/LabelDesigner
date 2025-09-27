@@ -1,0 +1,21 @@
+﻿<svg viewBox="0 0 100 100"
+     width="@Width" height="@Height"
+     xmlns="http://www.w3.org/2000/svg"
+     preserveAspectRatio="xMidYMid meet">
+    @foreach (var bar in Bars)
+    {
+        <rect x="@bar.X" y="25" width="@bar.W" height="50" fill="@StrokeColor" />
+    }
+</svg>
+
+@code {
+    [Parameter] public string StrokeColor { get; set; } = "currentColor";
+    [Parameter] public string Width { get; set; } = "100%";
+    [Parameter] public string Height { get; set; } = "100%";
+
+    private (int X, int W)[] Bars = new[]
+    {
+        (20, 4), (28, 2), (34, 5), (44, 2),
+        (50, 3), (58, 2), (64, 4), (72, 1)
+    };
+}

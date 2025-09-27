@@ -1,0 +1,101 @@
+<div class="designer-header d-flex align-items-center justify-content-between px-3 py-2">
+  
+  <!-- LEFT: editable label -->
+  <div class="left-area d-flex align-items-center gap-2 flex-shrink-0">
+    <input *ngIf="isEditingName"
+       [focusWhen]="isEditingName"
+           [(ngModel)]="templateName"
+           (blur)="saveTemplateName()"
+           (keydown)="handleKeyDown($event)"
+           class="form-control form-control-sm label-input" />
+    
+    <div *ngIf="!isEditingName"
+         class="d-flex align-items-center gap-1 label-display-wrapper"
+         (click)="enableEditing()"
+         style="cursor:pointer;">
+      <h5 class="mb-0 fw-semibold label-display">{{ templateName }}</h5>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+           class="edit-icon" viewBox="0 0 16 16">
+        <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 
+                 0 0 1 0 .708l-9.5 9.5L4 13l.646-2.354 
+                 9.5-9.5zM11.207 2L13 3.793 14.793 2 
+                 13 0.207 11.207 2zM4.5 13.5 1 15l1.5-3.5 
+                 L4.5 13.5z" />
+      </svg>
+    </div>
+  </div>
+  <!-- CENTER: shape toolbar -->
+  <div class="center-area flex-grow-1 d-flex justify-content-center">
+  
+    <div class="shape-group d-flex gap-2" role="toolbar">
+    
+    <h5 class="mb-0 fw-semibold label-display  me-4">Widgets</h5>
+    <div class="shape-item" *ngFor="let item of items">
+      
+      <button type="button"
+                class="btn-reset"
+                [class.selected]="selectedShape === item.type"
+                (click)="selectShape(item.type)"
+                (dblclick)="ondblClick($event, item)"
+                draggable="true"
+                (dragstart)="onDragStart($event, item)"
+                title="{{item.label}}">
+      <svg viewBox="0 0 100 100" width="30" height="30">
+      <ng-container [ngSwitch]="item.type">
+          <text *ngSwitchCase="WidgetType.Text" x="50" y="60" text-anchor="middle" font-size="60" font-family="Arial" fill="black">T</text> 
+          <text *ngSwitchCase="WidgetType.Image" x="50" y="60" text-anchor="middle" font-size="60" font-family="ui-serif" fill="black">I</text>
+          <polygon *ngSwitchCase="WidgetType.Triangle" points="50,10 90,90 10,90" fill="none" stroke="black" stroke-width="2" />
+          <rect *ngSwitchCase="WidgetType.Rectangle" x="10" y="20" width="80" height="60" fill="none" stroke="black" />
+          <g transform="scale(2.5)" *ngSwitchCase="WidgetType.Barcode">
+              <rect width="40" height="20" fill="white" />
+              <rect x="2"  y="15" width="1" height="16" fill="black" />
+              <rect x="5"  y="15" width="2" height="16" fill="black" />
+              <rect x="9"  y="15" width="1" height="16" fill="black" />
+              <rect x="12" y="15" width="3" height="16" fill="black" />
+              <rect x="17" y="15" width="1" height="16" fill="black" />
+              <rect x="20" y="15" width="2" height="16" fill="black" />
+              <rect x="24" y="15" width="1" height="16" fill="black" />
+              <rect x="27" y="15" width="2" height="16" fill="black" />
+              <rect x="31" y="15" width="1" height="16" fill="black" />
+              <rect x="34" y="15" width="3" height="16" fill="black" />        
+          </g>
+          <circle *ngSwitchCase="WidgetType.Circle" cx="50" cy="50" r="30" fill="none" stroke="black" />          
+          <line *ngSwitchCase="WidgetType.Line" x1="10" y1="90" x2="90" y2="10" stroke="black" />
+      </ng-container>
+          </svg>  
+        </button>
+        
+    </div>
+    </div>
+    <div class="vr mx-4"></div>
+    <div class="shape-group d-flex flex-nowrap overflow-auto gap-2 align-items-center" role="toolbar">
+  <h5 class="mb-0 fw-semibold label-display ms-1">Instant Layouts</h5>
+
+  <div class="shape-item" *ngFor="let item of customTemplates">
+    <button type="button"
+            class="btn-reset"
+            [class.selected]="selectedShape === item.type"
+            (click)="selectShape(item.type)"
+            draggable="true"
+            (dragstart)="onDragStart($event, item)"
+            title="{{item.label}}">
+      <img src="/images/TemplateBill.png" class="img-fluid" style="max-width:50px;max-height:50px;" alt="{{item.label}}">
+    </button>
+  </div>
+</div>
+  </div>
+
+  <!-- RIGHT: close -->
+  <div class="right-area flex-shrink-0">
+    <button type="button" class="btn-close" aria-label="Close" (click)="closeDesigner()"></button>
+  </div>
+</div>
+<!-- 
+
+  <div *ngFor="let item of items"
+       class="tool d-flex align-items-center"
+       draggable="true"
+       (dragstart)="onDragStart($event, item)">
+    <i [class]="item.iconClass" class="me-1"></i> {{ item.label }}
+  </div>
+</div> -->

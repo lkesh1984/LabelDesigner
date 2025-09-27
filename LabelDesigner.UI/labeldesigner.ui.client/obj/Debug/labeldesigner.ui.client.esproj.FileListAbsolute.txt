@@ -1,0 +1,1 @@
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.UI\labeldesigner.ui.client\obj\Debug\labeldesigner.ui.client.esproj.CoreCompileInputs.cache

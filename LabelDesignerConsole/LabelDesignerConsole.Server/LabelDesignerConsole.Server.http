@@ -1,0 +1,6 @@
+@LabelDesignerConsole.Server_HostAddress = http://localhost:5109
+
+GET {{LabelDesignerConsole.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

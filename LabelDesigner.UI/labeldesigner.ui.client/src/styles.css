@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+/* ===== Global App Container ===== */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* ===== App Wrapper ===== */
+.app-container {
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Flex Layout for Toolbox + Canvas + Properties Panel ===== */
+.editor-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: stretch; /* stretch children panels */
+  height: calc(100vh - 40px); /* full viewport minus container padding */
+}
+
+/* ===== Panels ===== */
+.toolbox-panel,
+.canvas-panel,
+.properties-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* full height of editor-wrapper */
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 10px;
+}
+
+/* Toolbox and Properties Panel fixed width */
+.toolbox-panel {
+  width: 220px;
+}
+.properties-panel {
+  width: 260px;
+}
+
+/* Canvas panel should take remaining horizontal space */
+.canvas-panel {
+  flex: 1;
+}
+
+/* ===== Section Headings ===== */
+.section-heading {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+/* ===== Scrollable content for Toolbox and Properties Panel ===== */
+.toolbox-panel .toolbox,
+.properties-panel {
+  overflow-y: auto;
+}
+
+/* Make inner component stretch inside panels */
+.flex-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 28px; /* bigger text */
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.app-header .logo i {
+  font-size: 32px; /* bigger icon */
+}

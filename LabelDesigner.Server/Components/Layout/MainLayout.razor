@@ -1,0 +1,85 @@
+﻿@using LabelDesigner.Server.Services
+@inherits LayoutComponentBase
+@inject ThemeService ThemeService
+
+<div class="app-container">
+    <!-- Top Bar -->
+    <header class="top-bar d-flex align-items-center px-3">
+        <h5 class="me-auto d-flex align-items-center gap-2">
+            <!-- Rectangular barcode sticker -->
+            <svg viewBox="0 0 64 64" width="32" height="24" xmlns="http://www.w3.org/2000/svg">
+                <!-- Rounded rectangle sticker -->
+                <rect x="4" y="12" width="56" height="40" rx="6" ry="6"
+                      fill="var(--bs-body-bg)"
+                      stroke="var(--bs-primary)"
+                      stroke-width="2" />
+
+                <!-- Barcode bars -->
+                <g stroke="var(--bs-primary)" stroke-width="2">
+                    <path d="M14 18 v28" />
+                    <path d="M20 16 v32" />
+                    <path d="M26 20 v24" />
+                    <path d="M32 14 v36" />
+                    <path d="M38 20 v24" />
+                    <path d="M44 16 v32" />
+                    <path d="M50 18 v28" />
+                </g>
+            </svg>
+
+            <!-- Title -->
+            Label Designer
+        </h5>
+        <!-- Right side: user info -->
+        <div class="d-flex align-items-center gap-2">
+            <!-- User icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                 class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                <path fill-rule="evenodd"
+                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226
+                     4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+            </svg>
+
+            <!-- Static user name -->
+            <span class="fw-semibold">Harsh Jangra</span>
+        </div>
+        <!-- Theme Switcher -->
+        @* <select class="form-select form-select-sm w-auto"
+                @onchange="ChangeTheme">
+            <option value="light">🌞 Light</option>
+            <option value="dark">🌙 Dark</option>
+            <option value="blue">🌊 Blue</option>
+            <option value="forest">🌲 Forest</option>
+        </select> *@
+    </header>
+
+    <div class="main-content d-flex">
+        <!-- Widget Selector -->
+        <aside class="sidebar p-2">
+            <ul class="list-unstyled">
+                <li><button class="btn btn-outline-primary w-100 mb-2">📝 Dashboard</button></li>
+                @* <li><button class="btn btn-outline-primary w-100 mb-2">📝 Text</button></li>
+                <li><button class="btn btn-outline-primary w-100 mb-2">⬜ Rectangle</button></li>
+                <li><button class="btn btn-outline-primary w-100 mb-2">⚪ Circle</button></li>
+                <li><button class="btn btn-outline-primary w-100 mb-2">📦 Barcode</button></li>
+                <li><button class="btn btn-outline-primary w-100 mb-2">🖼 Image</button></li> *@
+            </ul>
+        </aside>
+
+        <!-- Canvas Area -->
+        <main class="canvas flex-fill">
+            @Body
+        </main>
+    </div>
+</div>
+
+@code {
+    private async Task ChangeTheme(ChangeEventArgs e)
+    {
+        var theme = e.Value?.ToString();
+        if (!string.IsNullOrEmpty(theme))
+        {
+            await ThemeService.SetTheme(theme);
+        }
+    }
+}

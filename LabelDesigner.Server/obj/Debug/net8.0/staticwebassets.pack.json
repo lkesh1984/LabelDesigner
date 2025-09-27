@@ -1,0 +1,73 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LabelDesigner.Server.bundle.scp.css",
+      "PackagePath": "staticwebassets\\LabelDesigner.Server.vm75j0lx71.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\js\\theme.js",
+      "PackagePath": "staticwebassets\\js\\theme.js"
+    },
+    {
+      "Id": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\barcode.svg",
+      "PackagePath": "staticwebassets\\svg\\barcode.svg"
+    },
+    {
+      "Id": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\circle.svg",
+      "PackagePath": "staticwebassets\\svg\\circle.svg"
+    },
+    {
+      "Id": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\line.svg",
+      "PackagePath": "staticwebassets\\svg\\line.svg"
+    },
+    {
+      "Id": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\rectangle.svg",
+      "PackagePath": "staticwebassets\\svg\\rectangle.svg"
+    },
+    {
+      "Id": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\text.svg",
+      "PackagePath": "staticwebassets\\svg\\text.svg"
+    },
+    {
+      "Id": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\theme.css",
+      "PackagePath": "staticwebassets\\theme.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LabelDesigner.Server.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LabelDesigner.Server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.LabelDesigner.Server.props",
+      "PackagePath": "build\\LabelDesigner.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.LabelDesigner.Server.props",
+      "PackagePath": "buildMultiTargeting\\LabelDesigner.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.LabelDesigner.Server.props",
+      "PackagePath": "buildTransitive\\LabelDesigner.Server.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

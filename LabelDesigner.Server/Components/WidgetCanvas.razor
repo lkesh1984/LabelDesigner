@@ -1,0 +1,68 @@
+﻿@using LabelDesigner.Shared
+@using LabelDesigner.Shared.Widgets
+<div class="canvas-container position-relative w-100 h-100">
+    @if (Widgets?.Count == 0)
+    {
+        <div class="canvas-empty d-flex flex-column align-items-center justify-content-center">
+            <svg viewBox="0 0 100 100" width="60" height="60" class="mb-3">
+                <rect x="10" y="20" width="80" height="60"
+                      fill="none" stroke="#adb5bd" stroke-width="4"
+                      stroke-dasharray="6 4" />
+            </svg>
+            <p class="text-muted mb-1">No shapes yet</p>
+            <small class="text-secondary">Select a shape above and design</small>
+        </div>
+    }
+
+    <svg class="drawing-area w-100 h-100" viewBox="@CanvasSettings.ViewBox" preserveAspectRatio="none"
+         xmlns="http://www.w3.org/2000/svg">
+        @foreach (var widget in Widgets)
+        {
+            <g @onclick="() => Select(widget)" style="cursor:pointer;">
+                @switch (widget.Type)
+                {
+                    case WidgetType.Rectangle:
+                        RectangleWidget rectangleWidget = widget as RectangleWidget;
+                        <rect x="@widget.X" y="@widget.Y"
+                              width="@widget.Width" height="@widget.Height"
+                              fill="@rectangleWidget.FillColor" stroke="@rectangleWidget.StrokeColor" stroke-width="@rectangleWidget.StrokeWidthFormatted" />
+                        break;
+                    case WidgetType.Circle:
+                        CircleWidget circleWidget = widget as CircleWidget;
+                        <circle cx="@(@widget.X + @widget.Width / 2)" cy="@(@widget.Y + @widget.Height / 2)"
+                                r="@(Math.Min(widget.Width, widget.Height) / 2)"
+                                fill="@circleWidget.FillColor" stroke="@circleWidget.StrokeColor" stroke-width="@circleWidget.StrokeWidthFormatted" />
+                        break;
+                    @* case WidgetType.Line:
+                    LineWidget
+                    <line x1="@widget.X" y1="@widget.Y" x2="@(@widget.X + @widget.Width)" y2="@(@widget.Y + @widget.Height)"
+                        stroke="@widget.Stroke" stroke-width="@widget.StrokeWidth" />
+                        break;
+                    case WidgetType.Text:
+                        TextWidget textWidget = widget as TextWidget;
+                                       <text x="50" y="50" font-size="24" fill="black">
+    @SomeLabelText
+</text>
+                    break; *@
+                    case WidgetType.Barcode:
+                        BarcodeWidget barcodeWidget = widget as BarcodeWidget;
+                        <rect x="@widget.X" y="@widget.Y" width="@widget.Width" height="@widget.Height"
+                              fill="@barcodeWidget.Color" stroke="@barcodeWidget.StrokeColor" stroke-dasharray="2,2" />
+                        @* <text x="@widget.X" y="@(@widget.Y + widget.Height + 15)" font-size="12" fill="@widget.Stroke">
+                        @widget.Content
+                    </text> *@
+                        break;
+                }
+            </g>
+        }
+    </svg>
+</div>
+
+@code {
+    [Parameter] public List<Widget> Widgets { get; set; } = new();
+    [Parameter] public Widget? SelectedWidget { get; set; }
+    [Parameter] public CanvasSettings CanvasSettings { get; set; } = new();
+    [Parameter] public EventCallback<Widget> OnWidgetSelected { get; set; }
+
+    void Select(Widget w) => OnWidgetSelected.InvokeAsync(w);
+}

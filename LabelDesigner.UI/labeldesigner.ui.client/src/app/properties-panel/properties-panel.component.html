@@ -1,0 +1,116 @@
+<div class="properties-panel p-3 border rounded shadow-sm bg-white" *ngIf="item">
+
+  <div class="control mb-3" *ngIf="item.type !== 'canvas'">
+    <label>
+      <label class="form-label fw-semibold">Left</label>
+      <input type="number" min="10" max="1000" class="form-control" [(ngModel)]="item.left" (input)="itemChange()" >
+    </label>
+    <label class=" class="form-label fw-semibold>
+      Top
+      <input type="number" min="10" max="1000" class="form-control"[(ngModel)]="item.top" (input)="itemChange()">
+    </label>
+  </div>
+
+  <div class="control mb-3" *ngIf="item.type === 'canvas'">
+    <label>
+      <label class="form-label fw-semibold">Height</label>
+      <input type="number" min="10" max="1000" class="form-control" [(ngModel)]="item.height" (input)="itemChange()" >
+    </label>
+    <label class=" class="form-label fw-semibold>
+      Width
+      <input type="number" min="10" max="1000" class="form-control"[(ngModel)]="item.width" (input)="itemChange()">
+    </label>
+  </div>
+  <!-- BARCODE PROPERTIES -->
+  <div *ngIf="item.type === 'barcode'" class="control mb-3">
+    <label class="form-label fw-semibold">Barcode Type:</label>
+    <select class="form-select form-select-sm" [(ngModel)]="item.barcodeType" (change)="itemChange()">
+      <option *ngFor="let type of barcodeTypes" [value]="type">{{ type }}</option>
+    </select>
+  </div>
+
+  <!-- FILL/BACKGROUND COLOR for all except images -->
+  <div class="control mb-3" *ngIf="item.type !== 'image' && item.type !== 'textbox' && item.type !== 'barcode' && item.type !== 'line'">
+    <label class="form-label fw-semibold">Background Color:</label>
+    <input type="color" [(ngModel)]="item.bgColor" (input)="itemChange()" class="form-control form-control-color" />
+  </div>
+  <div class="control mb-3" *ngIf="item.type === 'circle' || item.type === 'polygon' || item.type === 'triangle' || item.type === 'rect'">
+    <label class="form-label fw-semibold">Stroke Color:</label>
+    <input type="color" [(ngModel)]="item.stroke" (input)="itemChange()" class="form-control form-control-color" />
+  </div>
+  <!-- FILL/BACKGROUND COLOR for all except images -->
+  <div class="control mb-3" *ngIf="item.type === 'line'">
+    <label class="form-label fw-semibold">Color:</label>
+    <input type="color" [(ngModel)]="item.bgColor" (input)="itemChange()" class="form-control form-control-color" />
+  </div>
+  <!--stroke width-->
+  <div class="control mb-3" *ngIf="item.type === 'circle' || item.type === 'polygon' || item.type === 'triangle' || item.type === 'rect' || item.type === 'line'">
+    <label class="form-label fw-semibold">Stroke Width:</label>
+    <input type="number" min="1" max="50" [(ngModel)]="item.strokeWidth" (input)="itemChange()" class="form-control form-control-color" />
+  </div>
+
+  <!-- LABEL/TEXTBOX PROPERTIES -->
+  <div *ngIf="item.type === 'textbox'">
+    <div class="control mb-3">
+      <div class="form-check">
+        <input class="form-check-input"
+              type="checkbox"
+              id="disableLabelCheck"
+              (change)="onCheckChange()" 
+              [(ngModel)]="item.isDynamic" />
+        <label class="form-check-label fw-semibold ms-1" for="disableLabelCheck">
+          Use Dynamic Label
+        </label>
+      </div>
+    </div>
+    <div class="control mb-3">
+      <label class="form-label fw-semibold">Id:</label>
+      <label class="form-control form-control-sm form-check-label">{{item.id}}</label>
+    </div>
+    <div class="control mb-3">
+      <label class="form-label fw-semibold">Label:</label>
+      <input [(ngModel)]="item.label" (input)="itemChange()" 
+              class="form-control form-control-sm" [disabled]="item.isDynamic" />
+    </div>
+
+    <div class="control mb-3 row">
+      <div class="col-6">
+        <label class="form-label fw-semibold">Font Size (px):</label>
+        <input type="number" min="5" max="100" [(ngModel)]="item.fontSize" (input)="itemChange()" class="form-control form-control-sm" />
+      </div>
+      <div class="col-6">
+        <label class="form-label fw-semibold">Font Color:</label>
+        <input type="color" [(ngModel)]="item.color" (input)="itemChange()" class="form-control form-control-color" />
+      </div>
+    </div>
+
+    <div class="control mb-3">
+      <label class="form-label fw-semibold">Text Formatting:</label>
+      <div class="formatting-btns btn-group" role="group">
+        <button type="button" class="btn btn-outline-secondary" 
+                [class.active]="item.bold" 
+                (click)="toggleStyle('bold')"><strong>B</strong></button>
+        <button type="button" class="btn btn-outline-secondary" 
+                [class.active]="item.italic" 
+                (click)="toggleStyle('italic')"><em>I</em></button>
+        <button type="button" class="btn btn-outline-secondary" 
+                [class.active]="item.underline" 
+                (click)="toggleStyle('underline')"><u>U</u></button>
+        <button type="button" class="btn btn-outline-secondary" 
+                [class.active]="item.linethrough" 
+                (click)="toggleStyle('linethrough')"><u>S</u></button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- IMAGE PROPERTIES -->
+  <div *ngIf="item.type === 'image'" class="control mb-3">
+    <label class="form-label fw-semibold">Replace Image:</label>
+    <label class="btn btn-sm btn-outline-primary">
+      Choose File
+      <input type="file" accept="image/*" (change)="onImageSelected($event)" hidden />
+    </label>
+  </div>
+
+</div>

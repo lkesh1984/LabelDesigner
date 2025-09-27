@@ -1,0 +1,330 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "LabelDesignerWebApp.Server",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Templates": {
+      "get": {
+        "tags": [
+          "Templates"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TemplateNew"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TemplateNew"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TemplateNew"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Templates"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TemplateNew"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TemplateNew"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TemplateNew"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Templates/{id}": {
+      "get": {
+        "tags": [
+          "Templates"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TemplateNew"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TemplateNew"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TemplateNew"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Templates"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TemplateNew"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TemplateNew"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TemplateNew"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Templates"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Templates/cloneTemplate/{templateSysId}": {
+      "post": {
+        "tags": [
+          "Templates"
+        ],
+        "parameters": [
+          {
+            "name": "templateSysId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TestPdf": {
+      "post": {
+        "tags": [
+          "TestPdf"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerateBulkPdfRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerateBulkPdfRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerateBulkPdfRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "GenerateBulkPdfRequest": {
+        "required": [
+          "records",
+          "templateId"
+        ],
+        "type": "object",
+        "properties": {
+          "templateId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "height": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "width": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "records": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GeneratePdfRequest"
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "GeneratePdfRequest": {
+        "required": [
+          "templateWidgets"
+        ],
+        "type": "object",
+        "properties": {
+          "templateWidgets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TemplateWidget"
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "TemplateNew": {
+        "type": "object",
+        "properties": {
+          "sysId": {
+            "type": "string"
+          },
+          "versionId": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "createdOn": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdBy": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "modifiedOn": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifiedBy": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fabricJson": {
+            "type": "string"
+          },
+          "canvasSettings": {
+            "type": "string"
+          },
+          "templateSvg": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TemplateWidget": {
+        "type": "object",
+        "properties": {
+          "widgetId": {
+            "type": "string"
+          },
+          "widgetValue": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

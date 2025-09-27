@@ -1,0 +1,70 @@
+<!-- Backdrop -->
+<div *ngIf="isOpen" class="modal-backdrop fade show"></div>
+
+<!-- Modal -->
+<div class="modal fade show d-block" tabindex="-1" *ngIf="isOpen">
+  <div class="modal-dialog modal-xl modal-dialog-centered custom-modal">
+    <div class="modal-content">
+
+      <!-- Body -->
+      <div class="modal-body designer-layout">
+        
+        <!-- Top: Toolbox -->
+        <div class="toolbox-row">
+          <app-toolbox (close)="closeDesigner($event)" 
+                       [templateName]="templateName" 
+                       (updateTemplateNameEvent)="updateTemplateName($event)"
+                       (onShapeDoubleClick)="onShapedblClick($event)"></app-toolbox>
+        </div>
+
+        <!-- Bottom: Canvas + Properties -->
+        <div class="bottom-row">
+            <div class="canvas-panel">
+              <app-canvas-editor #designer [templateId]="templateId" [templateSvg]="templateSvg" [fabricJson]="fabricJson" [templateVersionId]="templateVersionId"
+                                 (itemSelected)="onItemSelected($event)" (canvasChanged)="updatePreview($event)">
+              </app-canvas-editor>
+            </div>
+
+            <div class="properties-panel">
+
+              <app-properties-panel *ngIf="selectedItem"
+                                    [item]="selectedItem"
+                                    (itemUpdated)="onItemUpdated($event)">
+              </app-properties-panel>
+            </div>
+          </div>
+        </div>
+
+      <!-- Preview Modal -->
+      <!--<div class="modal fade show d-block" tabindex="-1" *ngIf="previewUrl">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Preview</h5>
+              <button type="button" class="btn-close" (click)="previewUrl = null"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img [src]="previewUrl" alt="Canvas Preview" class="img-fluid border" />
+            </div>
+          </div>
+        </div>
+      </div>-->
+
+
+      <!-- Footer -->
+      <div class="modal-footer">
+        <button class="btn btn-primary" (click)="download()">Export Pdf</button>
+        <button class="btn btn-primary" (click)="saveTemplate()">Save</button>
+        <!--<button class="btn btn-primary" (click)="previewDesigner()">Preview</button>-->
+        <button class="btn btn-secondary" (click)="resetDesigner()">Reset</button>
+        <button class="btn btn-secondary" style="background: #be0e0e;" (click)="closeDesigner()">Cancel</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- PREVIEW OVERLAY -->
+  <!--<div *ngIf="previewUrl" class="preview-overlay d-flex flex-column align-items-center justify-content-center">
+    <img [src]="previewUrl" alt="Canvas Preview" class="img-fluid border shadow" />
+    <button class="btn btn-secondary mt-3" (click)="previewUrl = null">Close Preview</button>
+  </div>-->

@@ -1,0 +1,15 @@
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Data\bin\Debug\net8.0\LabelDesigner.Data.deps.json
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Data\bin\Debug\net8.0\LabelDesigner.Data.dll
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Data\bin\Debug\net8.0\LabelDesigner.Data.pdb
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Data\bin\Debug\net8.0\LabelDesigner.Shared.dll
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Data\bin\Debug\net8.0\LabelDesigner.Shared.pdb
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Data\obj\Debug\net8.0\LabelDesigner.Data.csproj.AssemblyReference.cache
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Data\obj\Debug\net8.0\LabelDesigner.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Data\obj\Debug\net8.0\LabelDesigner.Data.AssemblyInfoInputs.cache
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Data\obj\Debug\net8.0\LabelDesigner.Data.AssemblyInfo.cs
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Data\obj\Debug\net8.0\LabelDesigner.Data.csproj.CoreCompileInputs.cache
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Data\obj\Debug\net8.0\LabelDes.E5128952.Up2Date
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Data\obj\Debug\net8.0\LabelDesigner.Data.dll
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Data\obj\Debug\net8.0\refint\LabelDesigner.Data.dll
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Data\obj\Debug\net8.0\LabelDesigner.Data.pdb
+C:\Git\Hackathon\LabelDesigner\LabelDesigner\LabelDesigner.Data\obj\Debug\net8.0\ref\LabelDesigner.Data.dll

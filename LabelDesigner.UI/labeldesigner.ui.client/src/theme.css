@@ -1,0 +1,74 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #212529;
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --success-color: #198754;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #0dcaf0;
+  --card-bg: #f8f9fa;
+  --card-border: #dee2e6;
+  --navbar-bg: #ffffff;
+  --navbar-text: #212529;
+  --navbar-border: #dee2e6;
+  --link-color: #0d6efd;
+  --link-hover: #0a58ca;
+}
+
+/*  Dark Theme */
+[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: #f8f9fa;
+  --primary-color: #bb86fc;
+  --secondary-color: #aaaaaa;
+  --success-color: #03dac6;
+  --danger-color: #cf6679;
+  --warning-color: #ffb74d;
+  --info-color: #64b5f6;
+  --card-bg: #1e1e1e;
+  --card-border: #333333;
+  --navbar-bg: #1c1c1c;
+  --navbar-text: #f8f9fa;
+  --navbar-border: #333333;
+  --link-color: #bb86fc;
+  --link-hover: #9a67ea;
+}
+
+/*  Blue Sky Theme */
+[data-theme="blue"] {
+  --background-color: #e8f4ff;
+  --text-color: #002b5c;
+  --primary-color: #007bff;
+  --secondary-color: #6c8fbf;
+  --success-color: #4cafef;
+  --danger-color: #ff6b6b;
+  --warning-color: #ffd54f;
+  --info-color: #2196f3;
+  --card-bg: #f0f8ff;
+  --card-border: #bcd4f6;
+  --navbar-bg: #d9ecff;
+  --navbar-text: #002b5c;
+  --navbar-border: #a6c8f0;
+  --link-color: #0056b3;
+  --link-hover: #004080;
+}
+
+/* Forest Theme */
+[data-theme="forest"] {
+  --background-color: #eaf4ec;
+  --text-color: #1b4332;
+  --primary-color: #2d6a4f;
+  --secondary-color: #40916c;
+  --success-color: #52b788;
+  --danger-color: #d00000;
+  --warning-color: #ffba08;
+  --info-color: #1e6091;
+  --card-bg: #d8f3dc;
+  --card-border: #95d5b2;
+  --navbar-bg: #74c69d;
+  --navbar-text: #1b4332;
+  --navbar-border: #52b788;
+  --link-color: #2d6a4f;
+  --link-hover: #1b4332;
+}

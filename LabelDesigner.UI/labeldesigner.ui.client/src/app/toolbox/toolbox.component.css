@@ -1,0 +1,100 @@
+
+/* base header */
+.designer-header {
+  border-bottom: 1px solid #e9ecef;
+  background-color: #ffffff;
+  min-height: 56px; /* consistent header height */
+}
+/* left area */
+.label-input {
+  width: 160px;
+  max-width: 36vw;
+}
+
+.label-display {
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+/* center shape group: keep compact and horizontally scrollable if many items */
+.shape-group {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  max-width: 520px; /* prevents the center from growing too wide */
+  overflow-x: auto;
+  padding: 4px 6px;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid #dee2e6; /* light gray border */
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+/* reset for button so bootstrap button styles don't interfere */
+.btn-reset {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* shape item box */
+.shape-item {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  transition: transform .12s ease, background-color .12s ease, box-shadow .12s ease;
+  background-color: #f8f9fa;
+}
+  /* hover / focus */
+  .shape-item:hover,
+  .shape-item:focus {
+    transform: translateY(-2px);
+    background-color: #eef2f6;
+    outline: none;
+  }
+  /* selected state */
+  .shape-item.selected {
+    background-color: #0d6efd; /* bootstrap primary */
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(13,110,253,0.12);
+    border-color: rgba(255,255,255,0.12);
+  }
+  /* SVG sizing inside each box — these rules ensure the SVG never stretches the header */
+  .shape-item svg,
+  .shape-group svg {
+    width: 22px;
+    height: 22px;
+    display: block;
+  }
+
+.edit-icon {
+  opacity: 0.6;
+  transition: opacity .15s;
+}
+/*
+.label-display-wrapper:hover .edit-icon {
+  opacity: 1;
+}*/
+/* small screens: compress label input and reduce spacing */
+@media (max-width: 576px) {
+  .label-input {
+    width: 120px;
+  }
+
+  .shape-item {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+}

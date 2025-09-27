@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BarCode" Version="2025.9.5" />
+    <PackageReference Include="System.Linq" Version="4.3.0" />
+    <PackageReference Include="Winnovative.HtmlToPdf.NetCore" Version="19.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LabelDesigner.Data\LabelDesigner.Data.csproj" />
+    <ProjectReference Include="..\LabelDesigner.Shared\LabelDesigner.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

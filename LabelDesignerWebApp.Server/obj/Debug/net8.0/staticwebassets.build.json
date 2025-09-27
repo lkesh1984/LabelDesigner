@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "pkvgbrYO6Y25c5w2x1br41RBEt0Vcq1ryjUk+qsk2mM=",
+  "Source": "LabelDesignerWebApp.Server",
+  "BasePath": "_content/LabelDesignerWebApp.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

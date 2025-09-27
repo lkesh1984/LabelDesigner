@@ -1,0 +1,73 @@
+/* Make modal content fill height nicely */
+.modal-body.designer-layout {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  padding: 0;
+}
+
+/* Toolbox row stays at top */
+.toolbox-row {
+  flex: 0 0 auto;
+  padding: 8px;
+  border-bottom: 1px solid #dee2e6;
+  background: #f9fafb;
+}
+.canvas-editor{
+    width:75%
+}
+/* Sidebar panel (default on large screens) */
+.properties-wrapper {
+  flex: 0 0 auto;
+  width: 25%;
+  border-left: 1px solid #dee2e6;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Bottom row splits horizontally */
+.bottom-row {
+    flex: 1 1 auto;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Canvas on the left */
+.canvas-panel {
+  flex: 3;
+  border-right: 1px solid #dee2e6;
+  background: #f8f9fa;
+  overflow: auto;
+  padding: 8px;
+}
+
+/* Properties on the right */
+.properties-panel {
+  flex: 1;
+  background: #ffffff;
+  overflow-y: auto;
+  padding: 12px;
+}
+
+.preview-panel {
+  flex: 1;
+  border-right: 1px solid #dee2e6;
+  background: #f8f9fa;
+  overflow: auto;
+  padding: 8px;
+}
+  .preview-panel img {
+    will-change: transform, opacity;
+  }
+
+.modal-dialog.modal-custom {
+  max-width: 90% !important; /* width */
+  height: 90% !important;    /* optional: height */
+}
+
+.modal-blur ~ .modal-backdrop.show {
+  background-color: rgba(0, 0, 0, 0.5) !important; /* optional darker overlay */
+  backdrop-filter: blur(5px); /* adjust the blur */
+}

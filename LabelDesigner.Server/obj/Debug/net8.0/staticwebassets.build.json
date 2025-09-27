@@ -1,0 +1,1361 @@
+{
+  "Version": 1,
+  "Hash": "FU9/o01p3ciTU/41LJK2eEV2BGRpE8xT7GS+SVQlHUo=",
+  "Source": "LabelDesigner.Server",
+  "BasePath": "_content/LabelDesigner.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "LabelDesigner.Server\\wwwroot",
+      "Source": "LabelDesigner.Server",
+      "ContentRoot": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\",
+      "BasePath": "_content/LabelDesigner.Server",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\obj\\Debug\\net8.0\\scopedcss\\bundle\\LabelDesigner.Server.styles.css",
+      "SourceId": "LabelDesigner.Server",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/LabelDesigner.Server",
+      "RelativePath": "LabelDesigner.Server#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "vm75j0lx71",
+      "Integrity": "Gcfnvs71jcuf2e0eM7QjlvTE0t6umOPVKWfYZe8nwjg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\obj\\Debug\\net8.0\\scopedcss\\bundle\\LabelDesigner.Server.styles.css"
+    },
+    {
+      "Identity": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LabelDesigner.Server.bundle.scp.css",
+      "SourceId": "LabelDesigner.Server",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/LabelDesigner.Server",
+      "RelativePath": "LabelDesigner.Server#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "vm75j0lx71",
+      "Integrity": "Gcfnvs71jcuf2e0eM7QjlvTE0t6umOPVKWfYZe8nwjg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LabelDesigner.Server.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\app.css",
+      "SourceId": "LabelDesigner.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\",
+      "BasePath": "_content/LabelDesigner.Server",
+      "RelativePath": "app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xx58h7d5ic",
+      "Integrity": "6/L+jX5neQr+fxgktAjFPsjvKNZ6E+9v2Qf9lC2cHVw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.css"
+    },
+    {
+      "Identity": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "SourceId": "LabelDesigner.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\",
+      "BasePath": "_content/LabelDesigner.Server",
+      "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6gzpyzhau4",
+      "Integrity": "SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "SourceId": "LabelDesigner.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\",
+      "BasePath": "_content/LabelDesigner.Server",
+      "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\favicon.ico",
+      "SourceId": "LabelDesigner.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\",
+      "BasePath": "_content/LabelDesigner.Server",
+      "RelativePath": "favicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mf2015z1ly",
+      "Integrity": "UlFpFCWk3LoVhktgu71x84ZymvWxzu+cmEjOjOMbJnI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\js\\theme.js",
+      "SourceId": "LabelDesigner.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\",
+      "BasePath": "_content/LabelDesigner.Server",
+      "RelativePath": "js/theme#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gqeci8xien",
+      "Integrity": "mNd2xsIXsrZ2k1ZPeCvE7lhLefj1nXyQcW9xom8PrFA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\theme.js"
+    },
+    {
+      "Identity": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\barcode.svg",
+      "SourceId": "LabelDesigner.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\",
+      "BasePath": "_content/LabelDesigner.Server",
+      "RelativePath": "svg/barcode#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zr16uugskj",
+      "Integrity": "f2RkjAlGAxgLh39vFOqh80m74uNQlrRlycXjjQhZiXk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\svg\\barcode.svg"
+    },
+    {
+      "Identity": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\circle.svg",
+      "SourceId": "LabelDesigner.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\",
+      "BasePath": "_content/LabelDesigner.Server",
+      "RelativePath": "svg/circle#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "97ovn5lei6",
+      "Integrity": "RQe30cp0fmtezbo5S0t53URO8UzCi+d2M8uvg/lmwGY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\svg\\circle.svg"
+    },
+    {
+      "Identity": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\line.svg",
+      "SourceId": "LabelDesigner.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\",
+      "BasePath": "_content/LabelDesigner.Server",
+      "RelativePath": "svg/line#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\svg\\line.svg"
+    },
+    {
+      "Identity": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\rectangle.svg",
+      "SourceId": "LabelDesigner.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\",
+      "BasePath": "_content/LabelDesigner.Server",
+      "RelativePath": "svg/rectangle#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wb9sdjw4gr",
+      "Integrity": "xIgdEo/M7by6pQyvh/aKHT55W1/F+kakzp51iCs/v7I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\svg\\rectangle.svg"
+    },
+    {
+      "Identity": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\text.svg",
+      "SourceId": "LabelDesigner.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\",
+      "BasePath": "_content/LabelDesigner.Server",
+      "RelativePath": "svg/text#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\svg\\text.svg"
+    },
+    {
+      "Identity": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\theme.css",
+      "SourceId": "LabelDesigner.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\",
+      "BasePath": "_content/LabelDesigner.Server",
+      "RelativePath": "theme#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "442f88ec1r",
+      "Integrity": "dMCHg74o9MF0a2F+/opgm9c4v7GLMHTOPTiuZMy3lgk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\theme.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6/L+jX5neQr+fxgktAjFPsjvKNZ6E+9v2Qf9lC2cHVw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 23:44:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6/L+jX5neQr+fxgktAjFPsjvKNZ6E+9v2Qf9lC2cHVw="
+        }
+      ]
+    },
+    {
+      "Route": "app.xx58h7d5ic.css",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6/L+jX5neQr+fxgktAjFPsjvKNZ6E+9v2Qf9lC2cHVw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 23:44:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xx58h7d5ic"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6/L+jX5neQr+fxgktAjFPsjvKNZ6E+9v2Qf9lC2cHVw="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.6gzpyzhau4.css",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 23:44:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gzpyzhau4"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 23:44:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 23:44:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.map",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 23:44:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6138"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UlFpFCWk3LoVhktgu71x84ZymvWxzu+cmEjOjOMbJnI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 23:44:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UlFpFCWk3LoVhktgu71x84ZymvWxzu+cmEjOjOMbJnI="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.mf2015z1ly.ico",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6138"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UlFpFCWk3LoVhktgu71x84ZymvWxzu+cmEjOjOMbJnI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 23:44:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mf2015z1ly"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UlFpFCWk3LoVhktgu71x84ZymvWxzu+cmEjOjOMbJnI="
+        }
+      ]
+    },
+    {
+      "Route": "js/theme.gqeci8xien.js",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\js\\theme.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "467"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mNd2xsIXsrZ2k1ZPeCvE7lhLefj1nXyQcW9xom8PrFA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 23:44:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gqeci8xien"
+        },
+        {
+          "Name": "label",
+          "Value": "js/theme.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mNd2xsIXsrZ2k1ZPeCvE7lhLefj1nXyQcW9xom8PrFA="
+        }
+      ]
+    },
+    {
+      "Route": "js/theme.js",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\js\\theme.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "467"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mNd2xsIXsrZ2k1ZPeCvE7lhLefj1nXyQcW9xom8PrFA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 23:44:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mNd2xsIXsrZ2k1ZPeCvE7lhLefj1nXyQcW9xom8PrFA="
+        }
+      ]
+    },
+    {
+      "Route": "LabelDesigner.Server.bundle.scp.css",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LabelDesigner.Server.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10576"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Gcfnvs71jcuf2e0eM7QjlvTE0t6umOPVKWfYZe8nwjg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 19 Sep 2025 09:47:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Gcfnvs71jcuf2e0eM7QjlvTE0t6umOPVKWfYZe8nwjg="
+        }
+      ]
+    },
+    {
+      "Route": "LabelDesigner.Server.styles.css",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\obj\\Debug\\net8.0\\scopedcss\\bundle\\LabelDesigner.Server.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10576"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Gcfnvs71jcuf2e0eM7QjlvTE0t6umOPVKWfYZe8nwjg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 19 Sep 2025 09:47:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Gcfnvs71jcuf2e0eM7QjlvTE0t6umOPVKWfYZe8nwjg="
+        }
+      ]
+    },
+    {
+      "Route": "LabelDesigner.Server.vm75j0lx71.bundle.scp.css",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LabelDesigner.Server.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10576"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Gcfnvs71jcuf2e0eM7QjlvTE0t6umOPVKWfYZe8nwjg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 19 Sep 2025 09:47:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vm75j0lx71"
+        },
+        {
+          "Name": "label",
+          "Value": "LabelDesigner.Server.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Gcfnvs71jcuf2e0eM7QjlvTE0t6umOPVKWfYZe8nwjg="
+        }
+      ]
+    },
+    {
+      "Route": "LabelDesigner.Server.vm75j0lx71.styles.css",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\obj\\Debug\\net8.0\\scopedcss\\bundle\\LabelDesigner.Server.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10576"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Gcfnvs71jcuf2e0eM7QjlvTE0t6umOPVKWfYZe8nwjg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 19 Sep 2025 09:47:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vm75j0lx71"
+        },
+        {
+          "Name": "label",
+          "Value": "LabelDesigner.Server.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Gcfnvs71jcuf2e0eM7QjlvTE0t6umOPVKWfYZe8nwjg="
+        }
+      ]
+    },
+    {
+      "Route": "svg/barcode.svg",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\barcode.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "504"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f2RkjAlGAxgLh39vFOqh80m74uNQlrRlycXjjQhZiXk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 19 Sep 2025 02:54:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f2RkjAlGAxgLh39vFOqh80m74uNQlrRlycXjjQhZiXk="
+        }
+      ]
+    },
+    {
+      "Route": "svg/barcode.zr16uugskj.svg",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\barcode.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "504"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f2RkjAlGAxgLh39vFOqh80m74uNQlrRlycXjjQhZiXk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 19 Sep 2025 02:54:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zr16uugskj"
+        },
+        {
+          "Name": "label",
+          "Value": "svg/barcode.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f2RkjAlGAxgLh39vFOqh80m74uNQlrRlycXjjQhZiXk="
+        }
+      ]
+    },
+    {
+      "Route": "svg/circle.97ovn5lei6.svg",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\circle.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RQe30cp0fmtezbo5S0t53URO8UzCi+d2M8uvg/lmwGY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 19 Sep 2025 02:54:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "97ovn5lei6"
+        },
+        {
+          "Name": "label",
+          "Value": "svg/circle.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RQe30cp0fmtezbo5S0t53URO8UzCi+d2M8uvg/lmwGY="
+        }
+      ]
+    },
+    {
+      "Route": "svg/circle.svg",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\circle.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RQe30cp0fmtezbo5S0t53URO8UzCi+d2M8uvg/lmwGY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 19 Sep 2025 02:54:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RQe30cp0fmtezbo5S0t53URO8UzCi+d2M8uvg/lmwGY="
+        }
+      ]
+    },
+    {
+      "Route": "svg/line.5ipweew5fc.svg",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\line.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 19 Sep 2025 02:54:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "svg/line.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "svg/line.svg",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\line.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 19 Sep 2025 02:54:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "svg/rectangle.svg",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\rectangle.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "159"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xIgdEo/M7by6pQyvh/aKHT55W1/F+kakzp51iCs/v7I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 19 Sep 2025 02:54:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xIgdEo/M7by6pQyvh/aKHT55W1/F+kakzp51iCs/v7I="
+        }
+      ]
+    },
+    {
+      "Route": "svg/rectangle.wb9sdjw4gr.svg",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\rectangle.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "159"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xIgdEo/M7by6pQyvh/aKHT55W1/F+kakzp51iCs/v7I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 19 Sep 2025 02:54:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wb9sdjw4gr"
+        },
+        {
+          "Name": "label",
+          "Value": "svg/rectangle.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xIgdEo/M7by6pQyvh/aKHT55W1/F+kakzp51iCs/v7I="
+        }
+      ]
+    },
+    {
+      "Route": "svg/text.5ipweew5fc.svg",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\text.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 19 Sep 2025 02:54:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "svg/text.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "svg/text.svg",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\svg\\text.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 19 Sep 2025 02:54:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "theme.442f88ec1r.css",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\theme.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1935"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dMCHg74o9MF0a2F+/opgm9c4v7GLMHTOPTiuZMy3lgk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 23:44:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "442f88ec1r"
+        },
+        {
+          "Name": "label",
+          "Value": "theme.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dMCHg74o9MF0a2F+/opgm9c4v7GLMHTOPTiuZMy3lgk="
+        }
+      ]
+    },
+    {
+      "Route": "theme.css",
+      "AssetFile": "C:\\Git\\Hackathon\\LabelDesigner\\LabelDesigner\\LabelDesigner.Server\\wwwroot\\theme.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1935"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dMCHg74o9MF0a2F+/opgm9c4v7GLMHTOPTiuZMy3lgk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 23:44:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dMCHg74o9MF0a2F+/opgm9c4v7GLMHTOPTiuZMy3lgk="
+        }
+      ]
+    }
+  ]
+}

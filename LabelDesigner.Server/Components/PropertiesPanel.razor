@@ -1,0 +1,28 @@
+﻿@using LabelDesigner.Shared.Widgets
+<div class="properties-panel border-start ps-3 pe-3" style="width: 260px;">
+    <h3 class="mb-3">Properties</h3>
+
+    @if (SelectedWidget is not null)
+    {
+        <div class="mb-3">
+            <label class="form-label">Fill Color</label>
+            <input type="color" class="form-control form-control-color"
+                   @bind="SelectedWidget.FillColor" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Stroke Width</label>
+            <input type="number" class="form-control"
+                   @bind="SelectedWidget.StrokeWidth" min="1" max="10" />
+        </div>
+    }
+    else
+    {
+        <p class="text-muted">Select a shape to edit its properties</p>
+    }
+</div>
+
+@code {
+    [Parameter] public Widget? SelectedWidget { get; set; }
+    [Parameter] public EventCallback OnWidgetChanged { get; set; }
+}

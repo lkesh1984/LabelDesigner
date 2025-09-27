@@ -1,0 +1,11 @@
+wwwroot\app.css
+wwwroot\bootstrap\bootstrap.min.css
+wwwroot\bootstrap\bootstrap.min.css.map
+wwwroot\favicon.ico
+wwwroot\js\theme.js
+wwwroot\svg\barcode.svg
+wwwroot\svg\circle.svg
+wwwroot\svg\line.svg
+wwwroot\svg\rectangle.svg
+wwwroot\svg\text.svg
+wwwroot\theme.css

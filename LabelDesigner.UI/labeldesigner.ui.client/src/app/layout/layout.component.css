@@ -1,0 +1,165 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.top-bar {
+  background-color: #0d6efd; /* Bootstrap primary blue */
+  color: #fff;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+/* Left side: title + barcode */
+.top-bar h5 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Barcode SVG styling */
+.top-bar h5 svg {
+  width: 32px;
+  height: 32px;
+  background-color: #fff; /* white background for barcode */
+  border-radius: 4px;
+  padding: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+/* Right side: user info */
+.top-bar .d-flex.align-items-center {
+  gap: 0.5rem;
+}
+
+.top-bar .bi-person-circle {
+  width: 28px;
+  height: 28px;
+  color: #fff;
+}
+
+/* Username text */
+.top-bar .fw-semibold {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Hover effect for user info */
+.top-bar .d-flex.align-items-center:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+/* Optional: make header sticky */
+.top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+/* Main content container */
+.main-content {
+  display: flex;
+  flex-direction: row;       
+  height: calc(100vh - 60px); /* full height minus header */
+  background-color: #f8f9fa;
+  padding: 1rem;
+  gap: 1rem;
+  justify-content: flex-start; /* align canvas to the left if needed */
+  align-items: flex-start;     /* align canvas to the top */
+}
+
+/* Canvas area */
+.canvas {
+  flex: 1;                  
+  background-color: #ffffff;
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+  overflow: auto;
+  padding: 1rem;
+
+  display: block;    /* do not make canvas a flex container */
+  height: 100%;      /* fill parent height */
+}
+
+/* Optional: make router-outlet content full width */
+.canvas > router-outlet,
+.canvas > * {
+  width: 100%;
+  height: 100%;
+}
+
+/* Scrollbar styling for canvas */
+.canvas::-webkit-scrollbar {
+  width: 8px;
+}
+
+.canvas::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.canvas::-webkit-scrollbar-thumb {
+  background: #ced4da;
+  border-radius: 4px;
+}
+
+.canvas::-webkit-scrollbar-thumb:hover {
+  background: #adb5bd;
+}
+
+.sidebar {
+  width: 220px;
+  background: #f8f9fa; /* light grey background */
+  color: #495057; /* dark text for readability */
+  min-height: 100vh;
+  border-right: 1px solid #dee2e6; /* subtle border line */
+}
+
+  .sidebar a {
+    display: block;
+    padding: .6rem .8rem;
+    margin-bottom: .2rem;
+    border-radius: 6px;
+    color: #495057;
+    text-decoration: none;
+    font-size: .95rem;
+    transition: background-color .15s ease, color .15s ease;
+  }
+
+    .sidebar a:hover {
+      background-color: #e9ecef; /* light hover */
+      color: #212529;
+    }
+
+    .sidebar a.active {
+      background-color: #0d6efd; /* bootstrap primary */
+      color: #ffffff;
+      box-shadow: 0 2px 6px rgba(13, 110, 253, 0.2);
+    }
+
+.sidebar-info {
+  border-top: 1px solid #dee2e6;
+  padding-top: 1.2rem;
+  text-align: center; /* centers the text */
+  font-size: .85rem;
+  line-height: 1.4;
+  color: #6c757d; /* muted grey text */
+}
+.canvas {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  overflow: auto;
+}
+.app-footer {
+  background-color: #f8f9fa; /* light gray */
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #dee2e6;
+  font-size: 0.9rem;
+  color: #6c757d;
+}

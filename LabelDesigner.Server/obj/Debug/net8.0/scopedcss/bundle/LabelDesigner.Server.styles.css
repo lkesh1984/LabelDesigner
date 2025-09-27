@@ -1,0 +1,374 @@
+/* _content/LabelDesigner.Server/Components/DesignerHeader.razor.rz.scp.css */
+/* base header */
+.designer-header[b-oks7ykw42u] {
+    border-bottom: 1px solid #e9ecef;
+    background-color: #ffffff;
+    min-height: 56px; /* consistent header height */
+}
+/* left area */
+.label-input[b-oks7ykw42u] {
+    width: 160px;
+    max-width: 36vw;
+}
+
+.label-display[b-oks7ykw42u] {
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+/* center shape group: keep compact and horizontally scrollable if many items */
+.shape-group[b-oks7ykw42u] {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    max-width: 520px; /* prevents the center from growing too wide */
+    overflow-x: auto;
+    padding: 4px 6px;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid #dee2e6; /* light gray border */
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+/* reset for button so bootstrap button styles don't interfere */
+.btn-reset[b-oks7ykw42u] {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+/* shape item box */
+.shape-item[b-oks7ykw42u] {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    transition: transform .12s ease, background-color .12s ease, box-shadow .12s ease;
+    background-color: #f8f9fa;
+}
+    /* hover / focus */
+    .shape-item:hover[b-oks7ykw42u],
+    .shape-item:focus[b-oks7ykw42u] {
+        transform: translateY(-2px);
+        background-color: #eef2f6;
+        outline: none;
+    }
+    /* selected state */
+    .shape-item.selected[b-oks7ykw42u] {
+        background-color: #0d6efd; /* bootstrap primary */
+        color: #fff;
+        box-shadow: 0 4px 10px rgba(13,110,253,0.12);
+        border-color: rgba(255,255,255,0.12);
+    }
+    /* SVG sizing inside each box — these rules ensure the SVG never stretches the header */
+    .shape-item svg[b-oks7ykw42u],
+    .shape-group svg[b-oks7ykw42u] {
+        width: 22px;
+        height: 22px;
+        display: block;
+    }
+
+.edit-icon[b-oks7ykw42u] {
+    opacity: 0.6;
+    transition: opacity .15s;
+}
+
+.label-display-wrapper:hover .edit-icon[b-oks7ykw42u] {
+    opacity: 1;
+}
+/* small screens: compress label input and reduce spacing */
+@media (max-width: 576px) {
+    .label-input[b-oks7ykw42u] {
+        width: 120px;
+    }
+
+    .shape-item[b-oks7ykw42u] {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+    }
+}
+/* _content/LabelDesigner.Server/Components/Layout/MainLayout.razor.rz.scp.css */
+.page[b-hxf15xyqgo] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-hxf15xyqgo] {
+    flex: 1;
+}
+
+.sidebar[b-hxf15xyqgo] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-hxf15xyqgo] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-hxf15xyqgo]  a, .top-row[b-hxf15xyqgo]  .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+    .top-row[b-hxf15xyqgo]  a:hover, .top-row[b-hxf15xyqgo]  .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row[b-hxf15xyqgo]  a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row[b-hxf15xyqgo] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-hxf15xyqgo]  a, .top-row[b-hxf15xyqgo]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-hxf15xyqgo] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-hxf15xyqgo] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-hxf15xyqgo] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth[b-hxf15xyqgo]  a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row[b-hxf15xyqgo], article[b-hxf15xyqgo] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+
+#blazor-error-ui[b-hxf15xyqgo] {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss[b-hxf15xyqgo] {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+/* _content/LabelDesigner.Server/Components/Layout/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-8i3qkpjlay] {
+    appearance: none;
+    cursor: pointer;
+    width: 3.5rem;
+    height: 2.5rem;
+    color: white;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") no-repeat center/1.75rem rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler:checked[b-8i3qkpjlay] {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.top-row[b-8i3qkpjlay] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-8i3qkpjlay] {
+    font-size: 1.1rem;
+}
+
+.bi[b-8i3qkpjlay] {
+    display: inline-block;
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.75rem;
+    top: -1px;
+    background-size: cover;
+}
+
+.bi-house-door-fill-nav-menu[b-8i3qkpjlay] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-house-door-fill' viewBox='0 0 16 16'%3E%3Cpath d='M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z'/%3E%3C/svg%3E");
+}
+
+.bi-plus-square-fill-nav-menu[b-8i3qkpjlay] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-plus-square-fill' viewBox='0 0 16 16'%3E%3Cpath d='M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z'/%3E%3C/svg%3E");
+}
+
+.bi-list-nested-nav-menu[b-8i3qkpjlay] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-list-nested' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E");
+}
+
+.nav-item[b-8i3qkpjlay] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-8i3qkpjlay] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-8i3qkpjlay] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-8i3qkpjlay]  .nav-link {
+        color: #d7d7d7;
+        background: none;
+        border: none;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+        width: 100%;
+    }
+
+.nav-item[b-8i3qkpjlay]  a.active {
+    background-color: rgba(255,255,255,0.37);
+    color: white;
+}
+
+.nav-item[b-8i3qkpjlay]  .nav-link:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.nav-scrollable[b-8i3qkpjlay] {
+    display: none;
+}
+
+.navbar-toggler:checked ~ .nav-scrollable[b-8i3qkpjlay] {
+    display: block;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-8i3qkpjlay] {
+        display: none;
+    }
+
+    .nav-scrollable[b-8i3qkpjlay] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+
+        /* Allow sidebar to scroll for tall menus */
+        height: calc(100vh - 3.5rem);
+        overflow-y: auto;
+    }
+}
+/* _content/LabelDesigner.Server/Components/PropertiesPanel.razor.rz.scp.css */
+.properties-wrapper[b-0ccmr9ea5i] {
+    width: auto;
+    min-width: 20px;
+}
+
+.properties-panel[b-0ccmr9ea5i] {
+    background-color: #ffffff;
+}
+/* _content/LabelDesigner.Server/Components/TemplateDesigner.razor.rz.scp.css */
+.main-header-primary[b-4he5od6t7x] {
+    background: var(--secondary-color);
+    color: #fff;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.25); /* ✅ border */
+}
+.shape-group[b-4he5od6t7x] {
+    display: inline-flex;
+    background: var(--secondary-color);
+    border-radius: 999px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.shape-selector[b-4he5od6t7x] {
+    padding: 4px 8px;
+}
+
+.shape-item[b-4he5od6t7x] {
+    padding: 6px 14px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    transition: background-color 0.2s, border-color 0.2s, transform 0.15s;
+}
+
+    .shape-item:hover[b-4he5od6t7x] {
+        background-color: var(--primary-color);
+        transform: translateY(-1px);
+    }
+
+    .shape-item.selected[b-4he5od6t7x] {
+        background-color: #fff;
+        color: var(--bs-primary);
+        border-color: #fff;
+        font-weight: 600;
+    }
+/* _content/LabelDesigner.Server/Components/WidgetCanvas.razor.rz.scp.css */
+.canvas-container[b-mhvtq90u0i] {
+    border: 2px dashed #dee2e6;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    overflow: hidden;
+}
+
+.canvas-empty[b-mhvtq90u0i] {
+    position: absolute;
+    inset: 0;
+    text-align: center;
+    color: #6c757d;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.drawing-area[b-mhvtq90u0i] {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
